@@ -6,7 +6,6 @@
 
 - Find and show tweets for a specific username, using Standar Search API.
 - Auto-detect link and mentions in tweets and show that as links 
-- Delete tweets one by one.
 - Compatible with all major browsers (IE8+).
 
 ### Install Dependencies
@@ -34,3 +33,7 @@ You can get the previous info creating your own twitter app in the next link <ht
 ### Test the project
 
 Access to `<link>` : <http://localhost:8000>
+
+You will see something like this:
+
+![](https://github.com/DesdeJorge/tweet-helm/blob/master/public/images/example.png)
