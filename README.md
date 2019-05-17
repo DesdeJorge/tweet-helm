@@ -17,9 +17,9 @@
 
 `$ node index`
 
-### Add Configuration
+### Custom Configuration
 
-In config.js file you need add the following data:
+If you need change the config of twitter app, you need change the config.js:
 
 ```javascript
 module.exports = {
@@ -29,7 +29,7 @@ module.exports = {
   access_token_secret:  '<YOUR_ACTS>'
 }
 ```
-You can get the prev info in the next link <https://developer.twitter.com/en/apps>
+You can get the previous info creating your own twitter app in the next link <https://developer.twitter.com/en/apps>
 
 ### Test the project
 
