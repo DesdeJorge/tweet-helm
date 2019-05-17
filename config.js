@@ -1,6 +1,6 @@
 module.exports = {
-  consumer_key:         '<YOUR_KEY>',
-  consumer_secret:      '<YOUR_SECRET>',
-  access_token:         '<YOUR_ACT>',
-  access_token_secret:  '<YOUR_ACTS>'
+  consumer_key:         'ttrhaHqEXwWQ3xmczKRpz2JpP',
+  consumer_secret:      'tzngTQ93DEZArv9XhhxdL4jWOtER9tWMATbAsWe9iBQmmwyVsl',
+  access_token:         '1080182484908818432-vvJC6hRMe63zoeRKHBD7aaI5fVanbE',
+  access_token_secret:  'D8zejiPOItyP3RT47CSMb1OVWpumzn4Wlk50gniowOKW5'
 }

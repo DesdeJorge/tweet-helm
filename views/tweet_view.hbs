@@ -34,7 +34,6 @@
                     <th scope="col">ID</th>
                     <th scope="col">Tweet</th>
                     <th scope="col">Create At</th>
-                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -52,10 +51,6 @@
                         <div style="font-size: 12px;">
                             {{created_at}}
                         </div>
-                    </td>
-                    <td style="text-align:center;">
-                        <input type="button" class="btn btn-danger btn-sm delete" id="{{id}}" data-id="{{id}}"
-                            value="X">
                     </td>
                 </tr>
                 {{/each}}
