@@ -1,0 +1,75 @@
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>TwitterHelm | Made for Learn</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <div class="banner">
+    </div>
+    <div class="container">
+        <form action="/" method="GET">
+            <div class="form-group">
+                <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp"
+                    placeholder="Enter your username without @">
+                <small id="emailHelp" class="form-text text-muted">Enter the username for search your tweets without
+                    @</small>
+                <button type="submit" class="btn btn-primary">Find</button>
+            </div>
+        </form>
+        <div class="alert alert-dark" id="alert" role="alert" style="display:none;">
+            
+        </div>
+        {{#if results}}
+        <table id="tweetsTb" data-first="{{first}}" data-last="{{last}}" class="table table-bordered"
+            data-column-defs='[{"sortable": false, "targets": [3]}]'>
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Tweet</th>
+                    <th scope="col">Create At</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each results}}
+                <tr>
+                    <td scope="row">
+                        <div style="font-size: 12px;">{{id}}</div>
+                    </td>
+                    <td>
+                        <div class="linkeable" style="font-size: 12px;">
+                            {{text}}
+                        </div>
+                    </td>
+                    <td>
+                        <div style="font-size: 12px;">
+                            {{created_at}}
+                        </div>
+                    </td>
+                    <td style="text-align:center;">
+                        <input type="button" class="btn btn-danger btn-sm delete" id="{{id}}" data-id="{{id}}"
+                            value="X">
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+        {{/if}}
+    </div>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.dataTables.min.js"></script>
+    <script src="/assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
